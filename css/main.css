@@ -1,0 +1,586 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Red+Hat+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  height: 1000px;
+  background-color: rgba(252, 235, 221, 0.2666666667);
+  position: relative;
+}
+.container .bagraund {
+  width: 100%;
+  height: 900px;
+  position: absolute;
+  right: 0;
+  width: 65%;
+  background-image: url(./img/9.png);
+  background-size: 100%;
+  z-index: -1;
+}
+.container .navbar {
+  width: 100%;
+  height: auto;
+  padding: 10px 100px;
+}
+.container .navbar .logo {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+.container .navbar .logo .logo_left {
+  width: 79px;
+  height: 30px;
+  cursor: pointer;
+}
+.container .navbar .logo .logo_center li {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  align-items: center;
+}
+.container .navbar .logo .logo_center li a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+.container .navbar .logo .logo_center li a:hover {
+  color: #FF860D;
+  font-weight: 400;
+  font-size: 16px;
+}
+.container .navbar .logo .logo_reigh {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100px;
+  height: 40px;
+}
+.container .navbar .logo .logo_reigh h2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  cursor: pointer;
+}
+.container .navbar .logo .logo_reigh h2:hover {
+  color: #FF860D;
+}
+.container .navbar .logo .logo_reigh img {
+  width: 30px;
+  height: 30px;
+}
+.container .main {
+  width: 100%;
+  display: flex;
+}
+.container .main .main_left {
+  width: 20%;
+  position: relative;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 250px;
+}
+.container .main .main_left .box {
+  width: 144px;
+  height: 196px;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .main .main_left .box p {
+  font-weight: 550;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "Red Hat Display", sans-serif;
+  color: #403C3C;
+}
+.container .main .main_left .box img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 100px 0px rgba(255, 134, 13, 0.5764705882);
+  margin-bottom: 5px;
+}
+.container .main .main_left .box2 {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .main_left .box2 img:nth-child(2) {
+  position: absolute;
+  right: -57px;
+  top: 60px;
+}
+.container .main .main_left .box2 img:nth-child(3) {
+  position: absolute;
+  right: 0px;
+  bottom: 45px;
+}
+.container .main .main_left .box2 h3 {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 120%;
+  padding-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  color: #FF6F0F;
+}
+.container .main .main_regiht {
+  width: 80%;
+  flex-wrap: wrap;
+  display: flex;
+  position: relative;
+}
+.container .main .main_regiht .img img:nth-child(1) {
+  position: absolute;
+  right: 200px;
+  top: 270px;
+}
+.container .main .main_regiht .img img:nth-child(2) {
+  width: 180px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.container .main .main_regiht .box {
+  width: 550px;
+  height: 253px;
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+}
+.container .main .main_regiht .box p {
+  position: absolute;
+  width: 400px;
+  height: 75px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #403C3C;
+  right: 0px;
+  bottom: 0px;
+}
+.container .main .main_regiht .box h3 {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  color: #FF6F0F;
+}
+.container .main .main_regiht h1 {
+  width: 832px;
+  height: 432px;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 120%;
+  font-family: "Italiana", serif;
+  color: #413E3C;
+  margin: 0 auto;
+  margin-left: 55px;
+}
+.container .main .main_regiht h1 b {
+  color: #FF860D;
+  font-weight: 100;
+  font-size: 120px;
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+  background-color: #FFFCF9;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.about .about_left img {
+  width: 500px;
+  height: 510px;
+}
+.about .about_right {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.about .about_right h1 {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 70px;
+  color: #413E3C;
+}
+.about .about_right p {
+  font-family: "Red Hat Display", sans-serif;
+  width: 510px;
+  height: 100px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #403C3C;
+}
+.about .about_right .about_box {
+  width: 520px;
+  height: 100px;
+  border: 1px solid #FF6F0F;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  justify-content: space-between;
+}
+.about .about_right .about_box h3 {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #403C3C;
+}
+.about .about_right .about_box h3 b {
+  font-weight: 700;
+  font-size: 32px;
+  color: #FF6F0F;
+}
+.about .about_right .about_box h4 {
+  width: 60px;
+  height: 0px;
+  border: 1px solid #FF6F0F;
+  transform: rotate(90deg);
+}
+
+.gallary {
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  background-color: #F8EBE1;
+}
+.gallary h1 {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 61px;
+  color: #413E3C;
+  text-align: center;
+}
+.gallary h1 b {
+  font-weight: 400;
+  color: #FF6F0F;
+}
+.gallary .gallary_card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gallary .gallary_card .gallary_box {
+  width: 350px;
+  height: 380px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.gallary .gallary_card .gallary_box .img img {
+  width: 350px;
+}
+.gallary .gallary_card .gallary_box h2 {
+  font-family: "Red Hat Display", sans-serif;
+  width: 350px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #413E3C;
+  gap: 10px;
+}
+
+.menu {
+  width: 100%;
+  height: 850px;
+  background-color: #FFFCF9;
+  padding: 100px;
+}
+.menu .text {
+  width: 1100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu .text h1 {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 61px;
+  color: #413E3C;
+  text-align: center;
+}
+.menu .text h1 b {
+  font-weight: 400;
+  color: #FF6F0F;
+}
+.menu .menu_card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.menu .menu_card .menu_box {
+  width: 350px;
+  height: 545px;
+  margin: 20px 0;
+}
+.menu .menu_card .menu_box img {
+  width: 350px;
+  height: 430px;
+  border-radius: 20px;
+}
+.menu .menu_card .menu_box h3 {
+  font-family: "Red Hat Display", sans-serif;
+  width: 350px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+.menu .menu_card .menu_box h3 b {
+  color: #FF6F0F;
+}
+.menu .menu_card .menu_box button {
+  width: 350px;
+  height: 40px;
+  font-family: "Red Hat Display", sans-serif;
+  border: 1px solid #FF6F0F;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #413E3C;
+  background-color: #FFFCF9;
+  margin-top: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.menu .menu_card .menu_box button:hover {
+  cursor: pointer;
+  background-color: #FF6F0F;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+.menu .menu_card .menu_box button:active {
+  background-color: red;
+  color: #FFFFFF;
+  font-weight: bold;
+  width: 300px;
+  margin-left: 20px;
+}
+
+.costumers {
+  width: 100%;
+  height: 700px;
+  padding: 100px;
+  background-color: #f5ede8;
+  overflow: hidden;
+}
+.costumers h1 {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 61px;
+  color: #413E3C;
+  text-align: center;
+}
+.costumers h1 b {
+  font-weight: 400;
+  color: #FF6F0F;
+}
+.costumers .costumers_card {
+  height: 450px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.costumers .costumers_card .costumers_box {
+  width: 450px;
+  height: 300px;
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+.costumers .costumers_card .costumers_box .costumers_text {
+  width: 450px;
+  height: 200px;
+  padding: 20px 30px;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 25px;
+}
+.costumers .costumers_card .costumers_box .costumers_text .img {
+  width: 150px;
+  height: 18px;
+}
+.costumers .costumers_card .costumers_box .costumers_text p {
+  width: 400px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #535353;
+}
+.costumers .costumers_card .costumers_box .name {
+  width: 450px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F4F4F4;
+  border-radius: 0px 0px 20px 20px;
+  padding: 30px;
+}
+.costumers .costumers_card .costumers_box .name .name_left {
+  display: flex;
+  align-self: center;
+  justify-content: left;
+  gap: 10px;
+}
+.costumers .costumers_card .costumers_box .name .name_left img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+.costumers .costumers_card .costumers_box .name .name_left h4 {
+  font-family: "Red Hat Display", sans-serif;
+  width: 200px;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #2B2B2B;
+}
+.costumers .costumers_card .costumers_box .name .name_left h4 b {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #535353;
+}
+.costumers .costumers_card .costumers_box .name .name_right {
+  width: 50px;
+  height: 20px;
+  display: flex;
+  align-self: center;
+  gap: 5px;
+}
+.costumers .costumers_card .costumers_box .name .name_right h5 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2B2B2B;
+}
+
+footer {
+  width: 100%;
+  height: 500px;
+  background-color: #E3D2C6;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer_card {
+  width: 270px;
+  height: 150px;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
+}
+footer .footer_card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: #413E3C;
+}
+footer .footer_card .icon {
+  width: 90px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+footer .footer_card .icon img {
+  border-radius: 50%;
+}
+footer .footer_card .icon img:hover {
+  border-radius: 50%;
+  background-color: #FF6F0F;
+  transition: all 0.6s ease-in-out;
+}
+footer .footer_box h1 {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 45px;
+  color: #2B2B2B;
+}
+footer .footer_box .link h3 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #535353;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+footer .footer_box .link h3:hover {
+  cursor: pointer;
+  color: #FF6F0F;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+footer .footer_box .link h3:active {
+  color: red;
+  font-size: 15px;
+  font-weight: 700;
+}/*# sourceMappingURL=main.css.map */
